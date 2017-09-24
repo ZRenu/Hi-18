@@ -12,6 +12,11 @@ var navTip=getElem('.header__nav-tip'),       //滑动标识
       '.screen-2-wrap-p',
       '.screen-2-wrap-span'
     ],
+    '.screen-3':[
+      '.screen-3-i1',
+      '.screen-3-i2',
+      '.screen-3-i3'
+    ],
     '.screen-4':[
      '.screen4-wrap-1',
      '.screen4-wrap-2',
@@ -108,6 +113,7 @@ window.onscroll=function(){
    
   }
   if(scrollTop>heightSize*2-80){
+    playScreenAnimateDone('.screen-3');
     index=2;
     navTip.style.left=(index*120+60)+'px';
     switchNavItensActive();

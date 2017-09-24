@@ -687,3 +687,34 @@ opacity: 0;
     -ms-animation: screen-1-p 1s;
     -o-animation: screen-1-p 1s;    
 }
+
+/* 第三屏 */
+.screen-3-i1_animate_init{
+    opacity: 0;
+    transform: translate(-100%,0);
+}
+.screen-3-i2_animate_init{
+    opacity: 0;
+    transform: translate(-200%,0);
+}
+.screen-3-i3_animate_init{
+    opacity: 0;
+    transform: translate(-300%,0);
+}
+
+
+.screen-3-i1_animate_done{
+    opacity: 1;
+    transform: translate(0,0);
+    transition: all 2s .5s;
+}
+.screen-3-i2_animate_done{
+    opacity: 1;
+    transform: translate(0,0);
+    transition: all 2s 2s;
+}
+.screen-3-i3_animate_done{
+    opacity: 1;
+    transform: translate(0,0);
+    transition: all 2s 3s;
+}
